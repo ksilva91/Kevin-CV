@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Calibri} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+% �FOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont % Letter spacing and font size
+
+Guayaquil {\large\textperiodcentered} Ecuador\\ % Your mailing address
+{\Large\Letter} kevin\_r\_s\_ch@hotmail.com  {\Large\Telefon} 0982595054 % Your email address and phone number
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape Kevin  Silva} % Your name at the top
+
+\vspace{1.5cm} % Extra whitespace after the large name at the top
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\section{Objetivo}
+
+Ocupar un cargo en el campo de la informática o algun afín, en especial en el área de multimedia y desarrollo de aplicaciones
+
+%----------------------------------------------------------------------------------------
+%	Datos Personales
+%----------------------------------------------------------------------------------------
+
+\section{Datos Personales}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2,4cm}X}
+\gray Nombres & \textbf{Kevin Ricardo}\\
+\gray Apellidos & \textbf{Silva Chávez} \\
+\gray Cedula de Id & \textbf{0930494570}\\
+\gray Fecha Nac & \textbf{Mayo 17 de 1991}\\
+\gray Lugar Nac & \textbf{Guayaquil}\\
+\gray Nacionalidad & \textbf{Ecuatoriana}\\
+\gray Estado Civil & \textbf{Soltero}\\
+\gray Domicilio & \textbf{Urb La Joya etapa Esmeralda Mz 10 Villa 25}\\
+
+\end{tabularx}
+\vspace{12pt}
+
+%----------------------------------------------------------------------------------------
+%	EDUCACION
+%----------------------------------------------------------------------------------------
+
+\section{Educación}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2,4cm}X}
+\gray Primaria & \textbf{Academia Naval Guayaquil} \\
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2,4cm}X}
+\gray Secundaria & \textbf{Academia Naval Guayaquil}\\
+\gray Graduado & \textbf{Bachiller tecnico en Comercio y Administración}\\
+\gray Especialización & \textbf{Informática}\\
+\gray Año & \textbf{2009}\\
+ & Graduado con Honores \\
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2,4cm}X}
+\gray Superior & \textbf{Escuela Superior Politécnica del Litoral}\\
+\gray Carrera & \textbf{Ingeniería en Ciencias Computacionales}\\
+\gray Especialización  & \textbf{Sistemas Multimedia}\\
+& Cursando el séptimo semestre
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	Cursos Realizados
+%----------------------------------------------------------------------------------------
+
+\section{Cursos Realizados}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2,4cm}X}
+\gray  Curso & \textbf{Intensivo Ingles}\\
+\gray Institución & \textbf{Golden Bridge Corporation}\\
+\gray Año  & \textbf{2008}\\
+\end{tabularx}
+
+\vspace{12pt}
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}
